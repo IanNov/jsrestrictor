@@ -22,8 +22,9 @@
 //
 
 
-if ((typeof chrome) !== "undefined") {
-  var browser = chrome;
+//Chrome compatibility
+if ((typeof browser) === "undefined") {
+	var browser = chrome;
 }
 
 function prepare_level_config(action_descr, params = {
